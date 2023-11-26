@@ -1,5 +1,5 @@
 import { of, from, scan, Observable, observable , fromEvent, map} from 'rxjs';
-
+import {range, timer, interval} from 'rxjs';
 /*
 /!* const stream$ = of(1,2,3,4,5,6,7,8);
 
@@ -40,6 +40,7 @@ streem$.subscribe({
 })
 */
 
+/*
 fromEvent(document.querySelector('canvas'),'mousemove')
   .pipe(
     map(event => ({
@@ -58,3 +59,12 @@ clear$.subscribe(()=>{
   const canvas = document.querySelector('canvas');
   canvas.getContext('2d').clearRect(0,0, canvas.width, canvas.height);
 })
+*/
+/*
+const sub = interval(500).subscribe(value => console.log(value))
+
+setTimeout(()=> sub.unsubscribe(), 4000) */
+/*
+timer(2500).subscribe(value => console.log(value)) */
+
+range(42,10).subscribe((value) => console.log(value))
