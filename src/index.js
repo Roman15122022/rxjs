@@ -2,4 +2,5 @@
 import './problem';
 */
 /* import './creation.js'; */
-import './subject'
+/* import './subject' */
+import './operators';
